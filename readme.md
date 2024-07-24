@@ -1,2 +1,4 @@
-# 이 레포는 바킹독 연습문제를 저장한 레포입니다. 모든문제는 C++11로 작성되었습니다
-* https://www.acmicpc.net/user/xms2007
+# 바킹독 연습문제를 저장한 레포
+* 모든문제는 C++11로 구현.
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=xms2007)](https://solved.ac/xms2007)
