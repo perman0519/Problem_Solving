@@ -7,12 +7,10 @@ void recur(int n, int start_x, int start_y, vector<vector<char> >&vec) {
 	if (n == 3) {
 		for (int i = start_x; i < start_x + n; i++) {
 			for (int j = start_y; j < start_y + n; j++) {
-				if (i == start_x + 1 && j == start_y + 1) {
+				if (i == start_x + 1 && j == start_y + 1)
 					vec[i][j] = ' ';
-				}
-				else {
+				else
 					vec[i][j] = '*';
-				}
 			}
 		}
 		return ;
