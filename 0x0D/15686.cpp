@@ -18,17 +18,6 @@ int res = INT_MAX;
 
 int check_min_dis() {
 	int tmp = INT_MAX;
-	// for (int i = 0; i < m; i++) {
-	// 	int tmp2 = 200;
-	// 	pair<int, int> now = chicken[arr[i]];
-	// 	for (int j = 0; j < house.size(); j++) {
-	// 		pair<int, int> h = house[j];
-	// 		int dis = abs(now.first - h.first) + abs(now.second - h.second);
-	// 		tmp2 = min(tmp, dis);
-	// 	}
-	// 	tmp += tmp2;
-	// }
-	// return tmp;
 	int full_dis = 0;
 	for (int i = 0; i < house.size(); i++) {
 		pair<int, int> h = house[i];
@@ -45,10 +34,8 @@ int check_min_dis() {
 
 void recur(int cur, int start = 0) {
 	if (cur == m) {
-		//arr
 		int tmp = check_min_dis();
 		res = min(res, tmp);
-		// cout << endl;
 		return ;
 	}
 	for (int i = start; i < chicken.size(); i++) {
