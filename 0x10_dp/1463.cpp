@@ -1,13 +1,9 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
 using namespace std;
-
+int v[10000005];
 int main() {
 	int n;
 	cin >> n;
-	vector<int> v(n + 1, 0);
 	v[1] = 0;
 	for (int i = 2; i <= n; i++) {
 		v[i] = v[i - 1] + 1;
@@ -17,5 +13,5 @@ int main() {
 			v[i] = min(v[i / 3] + 1, v[i]);
 	}
 	cout << v[n];
-
+	return 0;
 }
