@@ -5,6 +5,8 @@ using namespace std;
 // m 이상 n 이하의 소수를 모두 출력하는 프로그램
 // 2 <= m <= n <= 1,000,000
 int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
 	int m, n;
 	cin >> m >> n;
 	vector<bool> prime(n + 1, true);
