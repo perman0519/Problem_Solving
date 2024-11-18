@@ -10,8 +10,6 @@ int main() {
 		cin >> dq[i].first;
 	}
 	int ret = 0;
-	// for_each(dq.begin(), dq.end(), [](pair<int, bool> p) {cout << "{" << p.first << ' ' << p.second << "}" << '\n';});
-	// cout << "========================\n";
 	while (true) {
 		// 1.회전
 		pair<int, bool> p = dq.back();
@@ -45,8 +43,6 @@ int main() {
 		ret++;
 		if (c >= k)
 			break;
-		// for_each(dq.begin(), dq.end(), [](pair<int, bool> p) {cout << "{" << p.first << ' ' << p.second << "}" << '\n';});
-		// cout << "========================\n";
 	}
 	cout << ret;
 	return 0;
