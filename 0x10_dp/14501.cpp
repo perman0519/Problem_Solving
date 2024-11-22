@@ -18,10 +18,6 @@ int main() {
 			dp [i + v[i].first] = max(dp[i + v[i].first], dp[i] + v[i].second);
 			ret = max(ret, dp[i + v[i].first]);
 		}
-		// for (int i = 1; i <= n + 1; i++) {
-		// 	cout << dp[i] << ' ';
-		// }
-		// cout << "\n=====================================\n";
 	}
 	cout << ret << '\n';
 	return 0;
