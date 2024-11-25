@@ -17,14 +17,12 @@ int main() {
 	cin.tie(0);
 	int n;
 	cin >> n;
-	// vector<string> v;
 	set<string, Compare> sc;
 	while (n--) {
 		string str;
 		cin >> str;
 		sc.insert(str);
 	}
-	// sort(s.begin(), s.end(), cmp);
 	for (auto str : sc) {
 		cout << str << '\n';
 	}
