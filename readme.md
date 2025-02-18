@@ -1,5 +1,5 @@
-# 바킹독 연습문제를 저장한 레포
-* 모든문제는 C++11로 구현.
+# 바킹독, 프로그래머스, 백준 문제풀이를 저장한 레포
+* c++ --std=c++17
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=xms2007)](https://solved.ac/xms2007)
 
