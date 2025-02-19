@@ -1,13 +1,11 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/49994
-
 #include <string>
 #include <vector>
-#include <iostream>
 using namespace std;
 
 int bx[4] = {-1, 1, 0, 0};
 int by[4] = {0, 0, 1, -1};
-vector<vector<vector<int>>> board(2, vector<vector<int>>(10, vector<int>(10, 0)));
+vector<vector<vector<int>>> board(2, vector<vector<int>>(11, vector<int>(11, 0)));
 int solution(string dirs) {
     int answer = 0;
     int dirsize = dirs.length();
@@ -32,14 +30,12 @@ int solution(string dirs) {
         int nx = x + bx[index];
         int ny = y + by[index];
         if (nx < 0 || ny < 0 || nx > 10 || ny > 10) continue;
-        // cout << index / 2 << ' ' << (nx + x) / 2 << ' ' << (ny + y) / 2 << endl;
         if (!board[index / 2][(nx + x) / 2][(ny + y) / 2]) {
             board[index / 2][(nx + x) / 2][(ny + y) / 2] = 1;
             answer++;
         }
         x = nx;
         y = ny;
-        // cout << nx << ' ' << ny << endl;
     }
     return answer;
 }
